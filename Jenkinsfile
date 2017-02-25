@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker 'maven:3.3.3' }
+    agent any
     stages {
         stage('build') {
             steps {
-                 bat 'java -version'
+                 bat 'echo "Hello World"'
             }
         }
     }
